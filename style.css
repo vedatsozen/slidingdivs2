@@ -1,0 +1,72 @@
+body {
+    margin: auto 0;
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.div1 {
+    height: 400px;
+}
+
+.div2 {
+    height: 300px;
+}
+
+nav > div > a {
+    margin: auto;
+    color: white;
+    height: 50px;
+    width: fit-content;
+    padding: 0px;
+    font-size: 30px;
+    padding: 5px;
+    letter-spacing: 4px;
+}
+
+nav > div > a:active {
+    transform: scale(0.9);
+}
+
+#div1 {
+    left: 0vw;
+    background-image: url("div1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: 400ms ease;
+}
+
+#div2 {
+    left: -100vw;
+    background-image: url("div2.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: 400ms ease;
+}
+
+#div3 {
+    left: -100vw;
+    background-image: url("div3.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: 400ms ease;
+}
+
+#div1.iceri {
+    left: 0vw;
+   transition: 400ms ease;
+}
+ 
+
+#div2.iceri {
+    left: 0vw;
+   transition: 400ms ease;
+}
+
+#div3.iceri {
+    left: 0vw;
+   transition: 400ms ease;
+}
+ 

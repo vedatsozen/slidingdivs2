@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<nav class="fixed m-auto z-10 h-20 bg-black w-screen flex shadow shadow-xl">
+    <div class="m-auto w-fit flex flex-row bg-black gap-5">
+    <a id="anasayfalink" href="#" class="text-2xl m-auto">Anasayfa</a>
+    <a id="vizyonumuzlink" href="#" class="text-2xl m-auto">Vizyonumuz</a>
+    <a id="iletisimlink" href="#" class="text-2xl m-auto">İletişim</a>
+</div>
+</nav>
+    
+<div id="div1" class="absolute top-0 left-0 h-screen w-screen max-w-screen bg-red-500 flex flex-col flex-start items-center">
+    <h1 class="text-red-200 text-5xl w-4/6 text-center mt-40">ANASAYFA<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eum omnis tempora.</h1>
+    <p class="text-red-200 text-2xl w-4/6 text-center mt-20">Lorem ipsum dolor sit amet, <span class="text-black">consectetur</span> adipisicing elit. Consequuntur eum omnis tempora.</p>
+    <p class="text-red-200 text-2xl w-4/6 text-center mt-4">Lorem ipsum dolor sit amet, <span class="text-black">consectetur</span> adipisicing elit. Consequuntur eum omnis tempora.</p>
+
+</div>
+
+<div id="div2" class="absolute top-0 left-0 h-screen w-screen max-w-screen bg-red-500 flex flex-col flex-start items-center">
+    <h1 class="text-red-200 text-5xl w-4/6 text-center mt-40">VİZYONUMUZ<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eum omnis tempora.</h1>
+    <p class="text-red-200 text-2xl w-4/6 text-center mt-20">Lorem ipsum dolor sit amet, <span class="text-black">consectetur</span> adipisicing elit. Consequuntur eum omnis tempora.</p>
+    <p class="text-red-200 text-2xl w-4/6 text-center mt-4">Lorem ipsum dolor sit amet, <span class="text-black">consectetur</span> adipisicing elit. Consequuntur eum omnis tempora.</p>
+
+</div>
+
+<div id="div3" class="absolute top-0 left-0 h-screen w-screen max-w-screen bg-red-500 flex flex-col flex-start items-center">
+    <h1 class="text-red-200 text-5xl w-4/6 text-center mt-40">İLETİŞİM<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eum omnis tempora.</h1>
+    <p class="text-red-200 text-2xl w-4/6 text-center mt-20">Lorem ipsum dolor sit amet, <span class="text-black">consectetur</span> adipisicing elit. Consequuntur eum omnis tempora.</p>
+    <p class="text-red-200 text-2xl w-4/6 text-center mt-4">Lorem ipsum dolor sit amet, <span class="text-black">consectetur</span> adipisicing elit. Consequuntur eum omnis tempora.</p>
+
+</div>
+
+</body>
+
+<script>
+
+$(document).ready(function() {
+
+$("#anasayfalink").click(function() {
+$("#div1").addClass("iceri");
+$("#div2").removeClass("iceri");
+$("#div3").removeClass("iceri");
+
+})
+
+$("#vizyonumuzlink").click(function() {
+$("#div2").addClass("iceri");
+$("#div1").removeClass("iceri");
+$("#div3").removeClass("iceri");
+})
+
+$("#iletisimlink").click(function() {
+$("#div3").addClass("iceri");
+$("#div1").removeClass("iceri");
+$("#div2").removeClass("iceri");
+})
+
+})
+
+</script>
+</html>
